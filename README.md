@@ -34,19 +34,25 @@ make
 ```c
 #include "pivo.h"
 
-int main() {
-    BeerGlass myBeer = {
-        .width = 30,
-        .height = 15,
-        .liquid = '~',
-        .foam = '#',
-        .bubbles = "o*O",
-        .num_bubbles = 3
-    };
+#define BUBBLE_COLOR "\033[36m"
+#define RESET_COLOR "\033[0m"
 
-    display_beer(&myBeer);
-    return 0;
+int main() {
+  srand(time(NULL));
+
+  BeerGlass mug;
+  char bubbles[] = {'o', 'O', '*', 'B', 'b', 'o', 'O', 'B', 'b'};
+  init_beer_glass(&mug, 15, 30, '~', '#', bubbles,
+                  sizeof(bubbles) / sizeof(bubbles[0]));
+
+  printf("\033[2J");
+  printf("\033[H");
+
+  display_beer(&mug);
+
+  return 0;
 }
+
 ```
 
 ## 🎓 Why C is the Ultimate Programming Language
