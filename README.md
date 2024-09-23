@@ -23,6 +23,9 @@ PivoH transforms your terminal into a lively pub, complete with a beautifully re
 ```bash
 git clone https://github.com/yourusername/PivoH.git
 cd PivoH
+mkdir build
+cd build
+cmake ..
 make
 ```
 
