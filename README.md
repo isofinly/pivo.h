@@ -10,6 +10,10 @@ Are you tired of boring, static console outputs? Do you yearn for a more refresh
 
 PivoH transforms your terminal into a lively pub, complete with a beautifully rendered, animated beer glass. It's not just a visualization - it's a revolution in console-based hydration technology!
 
+## 🍗 Why We Did This (Besides Beer) 🍗
+
+You ever play War Thunder for 8 hours straight and realize your entire lineup's outdated? Yeah, that's what Makefile was like. Slow, clunky, no upgrades... I mean, come on. We needed CMake like I need another beer 🍺. It’s faster, smoother, and honestly, it builds faster than my KV-2 reloads, and that's saying something. 🍻
+
 ## 🌟 Features
 
 - **Realistic Beer Physics**: Watch in awe as your virtual beer is poured with stunning accuracy!
